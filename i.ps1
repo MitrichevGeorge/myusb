@@ -1,5 +1,4 @@
-Add-Type -AssemblyName System.Windows.Forms
-[System.Windows.Forms.MessageBox]::Show('RUNNNED', 'Info', 'OK', 'Information')
+
 
 
 function download($from, $to) {
